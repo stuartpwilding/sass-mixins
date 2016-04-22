@@ -1,0 +1,3 @@
+@mixin line-height($fontsize, $leading) {
+  line-height: ceil(($leading / $fontsize) * 1000) / 1000;
+}
