@@ -5,8 +5,6 @@
   border-width: $thickness $thickness 0 0;
   border-color: $color;
   border-style: solid;
-  vertical-align: middle;
-
   @if $direction == 'right' {
     @include transform (rotate(45deg));
   } @else if $direction == 'down' {
