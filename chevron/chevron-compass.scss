@@ -2,16 +2,16 @@
   display: inline-block;
   height: $size;
   width: $size;
-  border-width: $thickness $thickness 0 0;
+  border-width: $thickness 0 0 $thickness;
   border-color: $color;
   border-style: solid;
   @if $direction == 'right' {
-    @include transform (rotate(45deg));
-  } @else if $direction == 'down' {
     @include transform (rotate(135deg));
-  } @else if $direction == 'left' {
+  } @else if $direction == 'down' {
     @include transform (rotate(225deg));
-  } @else if $direction == 'up' {
+  } @else if $direction == 'left' {
     @include transform (rotate(315deg));
+  } @else if $direction == 'up' {
+    @include transform (rotate(45deg));
   }
 }
