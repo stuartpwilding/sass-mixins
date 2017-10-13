@@ -17,8 +17,8 @@
 }
 
 
-@mixin vertical-align-flex($inline: false) {
-  @if ($inline) {
+@mixin vertical-align-flex($display: null) {
+  @if ($display == 'inline') {
     display: inline-flex;
   } @else {
     display: flex;
